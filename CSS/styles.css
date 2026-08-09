@@ -418,3 +418,347 @@ footer p {
     }
 
 }
+
+
+
+/* =====================================
+   PÁGINA DE HISTORIA
+===================================== */
+
+.historia-hero {
+    min-height: 55vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 60px 20px;
+
+    background:
+        linear-gradient(
+            rgba(0, 45, 98, 0.85),
+            rgba(0, 0, 0, 0.75)
+        ),
+        url("../images/juan-bosch.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: var(--blanco);
+}
+
+.historia-hero div {
+    max-width: 850px;
+
+    animation: aparecer 1s ease;
+}
+
+.historia-hero h2 {
+    font-size: 2.8rem;
+
+    margin-bottom: 20px;
+}
+
+.historia-hero p {
+    font-size: 1.2rem;
+}
+
+
+/* =========================
+   SECCIONES HISTÓRICAS
+========================= */
+
+.historia-seccion {
+    padding: 70px 8%;
+}
+
+.historia-articulo {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 50px;
+}
+
+.historia-texto {
+    flex: 1;
+}
+
+.historia-texto h2 {
+    color: var(--azul);
+
+    font-size: 2rem;
+
+    margin: 10px 0 20px;
+}
+
+.historia-texto p {
+    margin-bottom: 15px;
+
+    text-align: justify;
+}
+
+
+/* =========================
+   FECHAS
+========================= */
+
+.fecha {
+    display: inline-block;
+
+    color: var(--rojo);
+
+    font-weight: bold;
+
+    font-size: 1.1rem;
+
+    border-bottom: 2px solid var(--rojo);
+
+    padding-bottom: 5px;
+}
+
+
+/* =========================
+   IMÁGENES
+========================= */
+
+.historia-imagen {
+    flex: 1;
+
+    text-align: center;
+}
+
+.historia-imagen img {
+    width: 100%;
+
+    max-width: 480px;
+
+    height: 330px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    box-shadow: var(--sombra);
+
+    transition: var(--transicion);
+}
+
+.historia-imagen img:hover {
+    transform: scale(1.03);
+}
+
+
+/* =========================
+   SECCIÓN INVERSA
+========================= */
+
+.reversa {
+    flex-direction: row-reverse;
+}
+
+
+/* =========================
+   FONDOS
+========================= */
+
+.fondo-gris {
+    background-color: #e9ecef;
+}
+
+.fondo-azul {
+    background-color: var(--azul);
+}
+
+.texto-blanco {
+    color: var(--blanco);
+}
+
+.texto-blanco h2 {
+    color: var(--blanco);
+}
+
+.fecha-clara {
+    color: var(--blanco);
+
+    border-color: var(--rojo);
+}
+
+
+/* =========================
+   CUADRO DESTACADO
+========================= */
+
+.historia-destacado {
+    flex: 1;
+
+    background-color: var(--blanco);
+
+    padding: 35px;
+
+    border-left: 6px solid var(--rojo);
+
+    border-radius: 8px;
+
+    box-shadow: var(--sombra);
+}
+
+.historia-destacado h3 {
+    color: var(--azul);
+
+    font-size: 1.5rem;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   GOLPE DE ESTADO
+========================= */
+
+.golpe {
+    background:
+        linear-gradient(
+            rgba(25, 25, 25, 0.93),
+            rgba(0, 45, 98, 0.90)
+        );
+}
+
+
+/* =========================
+   CONTINUAR HISTORIA
+========================= */
+
+.continuar-historia {
+    padding: 70px 20px;
+
+    text-align: center;
+
+    background-color: var(--blanco);
+}
+
+.continuar-historia h2 {
+    color: var(--azul);
+
+    font-size: 2.2rem;
+
+    margin-bottom: 20px;
+}
+
+.continuar-historia p {
+    max-width: 800px;
+
+    margin: 0 auto 30px;
+}
+
+
+/* =========================
+   RESPONSIVE HISTORIA
+========================= */
+
+@media (max-width: 600px) {
+
+    .historia-hero h2 {
+        font-size: 2rem;
+    }
+
+    .historia-articulo,
+    .reversa {
+        flex-direction: column;
+    }
+
+    .historia-seccion {
+        padding: 45px 20px;
+    }
+
+    .historia-imagen img {
+        height: 250px;
+    }
+
+}
+
+
+@media (min-width: 601px) and (max-width: 900px) {
+
+    .historia-articulo,
+    .reversa {
+        flex-direction: column;
+    }
+
+    .historia-imagen img {
+        max-width: 600px;
+    }
+
+}
+/* =========================
+   ELECCIONES DE 1966
+========================= */
+
+.elecciones-1966 {
+    background:
+        linear-gradient(
+            rgba(0, 45, 98, 0.94),
+            rgba(20, 20, 20, 0.92)
+        );
+}
+/* =====================================
+   LOS DOCE AÑOS DE BALAGUER
+===================================== */
+
+.represion {
+    background:
+        linear-gradient(
+            rgba(25, 25, 25, 0.96),
+            rgba(70, 0, 0, 0.90)
+        );
+}
+
+.elecciones-final {
+    background:
+        linear-gradient(
+            rgba(0, 45, 98, 0.95),
+            rgba(15, 15, 15, 0.93)
+        );
+}
+
+/* Animación para las secciones históricas */
+
+.historia-articulo {
+    animation: aparecer 0.8s ease;
+}
+
+/* Mejor efecto sobre fotografías */
+
+.historia-imagen {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+
+.historia-imagen img {
+    display: block;
+}
+
+/* Mejora para teléfonos */
+
+@media (max-width: 600px) {
+
+    .historia-texto h2 {
+        font-size: 1.7rem;
+    }
+
+    .historia-texto p {
+        text-align: left;
+    }
+
+    .historia-destacado {
+        width: 100%;
+    }
+
+}
