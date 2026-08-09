@@ -762,7 +762,328 @@ footer p {
     }
 
 }
+/* =====================================
+   CATÁLOGO DE PERSONAJES
+===================================== */
 
+.catalogo-hero {
+
+    min-height: 45vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 60px 20px;
+
+    color: var(--blanco);
+
+    background:
+        linear-gradient(
+            rgba(0, 45, 98, 0.90),
+            rgba(20, 20, 20, 0.85)
+        ),
+        url("../images/guerra-abril.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+}
+
+
+.catalogo-hero h2 {
+
+    font-size: 3rem;
+
+    margin-bottom: 15px;
+
+}
+
+
+.catalogo-hero p {
+
+    max-width: 700px;
+
+    font-size: 1.1rem;
+
+}
+
+
+/* =========================
+   CONTENIDO CATÁLOGO
+========================= */
+
+.catalogo {
+
+    padding: 70px 8%;
+
+}
+
+
+.titulo-seccion {
+
+    text-align: center;
+
+    max-width: 800px;
+
+    margin: 0 auto 50px;
+
+}
+
+
+.titulo-seccion span {
+
+    color: var(--rojo);
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+
+}
+
+
+.titulo-seccion h2 {
+
+    color: var(--azul);
+
+    font-size: 2.4rem;
+
+    margin: 10px 0;
+
+}
+
+
+/* =========================
+   GRID
+========================= */
+
+.catalogo-grid {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 30px;
+
+}
+
+
+/* =========================
+   TARJETAS PERSONAJES
+========================= */
+
+.personaje-card {
+
+    background-color:
+        var(--blanco);
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow:
+        var(--sombra);
+
+    transition:
+        var(--transicion);
+
+}
+
+
+.personaje-card:hover {
+
+    transform:
+        translateY(-8px);
+
+}
+
+
+.personaje-imagen {
+
+    height: 280px;
+
+    overflow: hidden;
+
+}
+
+
+.personaje-imagen img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition:
+        var(--transicion);
+
+}
+
+
+.personaje-card:hover
+.personaje-imagen img {
+
+    transform:
+        scale(1.05);
+
+}
+
+
+/* =========================
+   INFORMACIÓN PERSONAJE
+========================= */
+
+.personaje-contenido {
+
+    padding: 25px;
+
+}
+
+
+.personaje-periodo {
+
+    display: inline-block;
+
+    background-color:
+        var(--rojo);
+
+    color:
+        var(--blanco);
+
+    padding: 5px 10px;
+
+    border-radius: 4px;
+
+    font-size: 0.85rem;
+
+    font-weight: bold;
+
+    margin-bottom: 12px;
+
+}
+
+
+.personaje-contenido h2 {
+
+    color:
+        var(--azul);
+
+    margin-bottom: 8px;
+
+}
+
+
+.personaje-contenido h3 {
+
+    color:
+        var(--gris);
+
+    font-size: 1rem;
+
+    margin-bottom: 15px;
+
+}
+
+
+.personaje-contenido p {
+
+    font-size: 0.95rem;
+
+}
+
+
+/* =========================
+   CARGANDO / ERROR
+========================= */
+
+.cargando {
+
+    text-align: center;
+
+    font-size: 1.2rem;
+
+    color:
+        var(--azul);
+
+}
+
+
+.error-catalogo {
+
+    max-width: 700px;
+
+    margin: auto;
+
+    padding: 40px;
+
+    text-align: center;
+
+    background:
+        var(--blanco);
+
+    border-left:
+        6px solid var(--rojo);
+
+    box-shadow:
+        var(--sombra);
+
+}
+
+
+/* =========================
+   RESPONSIVE CATÁLOGO
+========================= */
+
+@media (max-width: 600px) {
+
+    .catalogo-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .catalogo-hero h2 {
+
+        font-size: 2rem;
+
+    }
+
+
+    .personaje-imagen {
+
+        height: 320px;
+
+    }
+
+}
+
+
+@media (min-width: 601px)
+and (max-width: 900px) {
+
+    .catalogo-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+}
 
 /* =====================================
    CONTACTO
