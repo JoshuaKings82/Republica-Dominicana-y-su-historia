@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE personajes SYSTEM "datos.dtd">
+
+<?xml-stylesheet type="text/xsl" href="catalogo.xsl"?>
+
+<personajes>
+
+    <personaje>
+        <nombre>Rafael Leónidas Trujillo</nombre>
+        <periodo>1930 - 1961</periodo>
+        <cargo>Dictador de la República Dominicana</cargo>
+        <descripcion>
+            Gobernó la República Dominicana bajo un régimen autoritario
+            durante más de tres décadas. Fue ajusticiado el 30 de mayo de 1961.
+        </descripcion>
+        <imagen>../images/trujilloyadesgastado.jpg</imagen>
+    </personaje>
+
+    <personaje>
+        <nombre>Antonio Imbert Barrera</nombre>
+        <periodo>1961</periodo>
+        <cargo>Participante en el ajusticiamiento de Trujillo</cargo>
+        <descripcion>
+            Fue uno de los participantes en la conspiración que culminó
+            con la muerte de Rafael Leónidas Trujillo el 30 de mayo de 1961.
+        </descripcion>
+        <imagen>../images/imbert.jpg</imagen>
+    </personaje>
+
+    <personaje>
+        <nombre>Juan Bosch</nombre>
+        <periodo>1963</periodo>
+        <cargo>Presidente de la República Dominicana</cargo>
+        <descripcion>
+            Ganó las elecciones de 1962 y asumió la Presidencia
+            el 27 de febrero de 1963. Fue derrocado mediante un
+            golpe de Estado el 25 de septiembre de ese mismo año.
+        </descripcion>
+        <imagen>../images/juanboschjuramentacion.jpg</imagen>
+    </personaje>
+
+    <personaje>
+        <nombre>Francisco Alberto Caamaño</nombre>
+        <periodo>1965</periodo>
+        <cargo>Líder constitucionalista</cargo>
+        <descripcion>
+            Fue una de las principales figuras de la Guerra de Abril
+            de 1965 y encabezó el gobierno constitucionalista.
+        </descripcion>
+        <imagen>../images/caamaño1.jpg</imagen>
+    </personaje>
+
+    <personaje>
+        <nombre>Joaquín Balaguer</nombre>
+        <periodo>1966 - 1978</periodo>
+        <cargo>Presidente de la República Dominicana</cargo>
+        <descripcion>
+            Gobernó de manera consecutiva durante doce años,
+            desde 1966 hasta 1978, en tres períodos presidenciales.
+        </descripcion>
+        <imagen>../images/balaguercontrujillo.jpg</imagen>
+    </personaje>
+
+    <personaje>
+        <nombre>Antonio Guzmán Fernández</nombre>
+        <periodo>1978</periodo>
+        <cargo>Presidente de la República Dominicana</cargo>
+        <descripcion>
+            Ganó las elecciones presidenciales de 1978 y puso fin
+            a los doce años consecutivos de gobierno de Joaquín Balaguer.
+        </descripcion>
+        <imagen>../images/AntonioGuzmandiscurso.jpg</imagen>
+    </personaje>
+
+</personajes>

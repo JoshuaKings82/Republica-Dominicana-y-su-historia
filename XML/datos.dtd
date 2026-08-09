@@ -1,0 +1,13 @@
+<!ELEMENT personajes (personaje+)>
+
+<!ELEMENT personaje (nombre, periodo, cargo, descripcion, imagen)>
+
+<!ELEMENT nombre (#PCDATA)>
+
+<!ELEMENT periodo (#PCDATA)>
+
+<!ELEMENT cargo (#PCDATA)>
+
+<!ELEMENT descripcion (#PCDATA)>
+
+<!ELEMENT imagen (#PCDATA)>
