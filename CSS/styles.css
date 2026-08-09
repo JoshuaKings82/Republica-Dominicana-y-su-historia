@@ -1,0 +1,420 @@
+/* =========================
+   VARIABLES GENERALES
+========================= */
+
+:root {
+    --azul: #002d62;
+    --rojo: #ce1126;
+    --blanco: #ffffff;
+    --gris-claro: #f4f4f4;
+    --gris: #666666;
+    --oscuro: #1d1d1d;
+    --sombra: 0 4px 15px rgba(0, 0, 0, 0.15);
+    --transicion: all 0.3s ease;
+}
+
+
+/* =========================
+   ESTILOS GENERALES
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--gris-claro);
+    color: var(--oscuro);
+    line-height: 1.6;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background-color: var(--azul);
+    color: var(--blanco);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 8%;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    box-shadow: var(--sombra);
+}
+
+.logo h1 {
+    font-size: 1.6rem;
+}
+
+
+/* =========================
+   NAVEGACIÓN
+========================= */
+
+nav ul {
+    list-style: none;
+
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: var(--blanco);
+    text-decoration: none;
+
+    font-weight: bold;
+
+    padding: 8px 12px;
+
+    border-radius: 5px;
+
+    transition: var(--transicion);
+}
+
+nav a:hover {
+    background-color: var(--rojo);
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 80vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 60px 20px;
+
+    background:
+        linear-gradient(
+            rgba(0, 45, 98, 0.80),
+            rgba(0, 0, 0, 0.70)
+        ),
+        url("../images/trujillo.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: var(--blanco);
+}
+
+.hero-contenido {
+    max-width: 850px;
+
+    animation: aparecer 1.2s ease;
+}
+
+.hero h2 {
+    font-size: 3rem;
+
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   BOTONES
+========================= */
+
+.boton {
+    display: inline-block;
+
+    background-color: var(--rojo);
+    color: var(--blanco);
+
+    padding: 12px 25px;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+
+    transition: var(--transicion);
+}
+
+.boton:hover {
+    background-color: var(--blanco);
+    color: var(--azul);
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   INTRODUCCIÓN
+========================= */
+
+.introduccion {
+    max-width: 1000px;
+
+    margin: 60px auto;
+
+    padding: 40px;
+
+    background-color: var(--blanco);
+
+    border-radius: 10px;
+
+    box-shadow: var(--sombra);
+}
+
+.introduccion h2 {
+    text-align: center;
+
+    color: var(--azul);
+
+    margin-bottom: 25px;
+
+    font-size: 2rem;
+}
+
+.introduccion p {
+    margin-bottom: 18px;
+
+    text-align: justify;
+}
+
+
+/* =========================
+   ETAPAS HISTÓRICAS
+========================= */
+
+.etapas {
+    padding: 60px 8%;
+}
+
+.etapas h2 {
+    text-align: center;
+
+    color: var(--azul);
+
+    font-size: 2.2rem;
+
+    margin-bottom: 40px;
+}
+
+.tarjetas {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.tarjetas article {
+    background-color: var(--blanco);
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    border-top: 5px solid var(--rojo);
+
+    box-shadow: var(--sombra);
+
+    transition: var(--transicion);
+}
+
+.tarjetas article:hover {
+    transform: translateY(-8px);
+}
+
+.tarjetas h3 {
+    color: var(--rojo);
+
+    font-size: 1.8rem;
+
+    margin-bottom: 5px;
+}
+
+.tarjetas h4 {
+    color: var(--azul);
+
+    margin-bottom: 15px;
+
+    font-size: 1.2rem;
+}
+
+
+/* =========================
+   SECCIÓN EXPLORAR
+========================= */
+
+.explorar {
+    background-color: var(--azul);
+
+    color: var(--blanco);
+
+    text-align: center;
+
+    padding: 70px 20px;
+}
+
+.explorar h2 {
+    font-size: 2.2rem;
+
+    margin-bottom: 20px;
+}
+
+.explorar p {
+    max-width: 700px;
+
+    margin: 0 auto 30px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: var(--oscuro);
+
+    color: var(--blanco);
+
+    text-align: center;
+
+    padding: 25px;
+
+    border-top: 5px solid var(--rojo);
+}
+
+footer p {
+    margin: 5px;
+}
+
+
+/* =========================
+   ANIMACIONES
+========================= */
+
+@keyframes aparecer {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =========================
+   RESPONSIVE - MÓVIL
+========================= */
+
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 15px;
+    }
+
+    .logo {
+        margin-bottom: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+
+        gap: 8px;
+    }
+
+    .hero {
+        min-height: 70vh;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .introduccion {
+        margin: 30px 15px;
+
+        padding: 25px;
+    }
+
+    .tarjetas {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================
+   RESPONSIVE - TABLET
+========================= */
+
+@media (min-width: 601px) and (max-width: 900px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-bottom: 15px;
+    }
+
+    .tarjetas {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+}
+
+
+/* =========================
+   RESPONSIVE - ESCRITORIO
+========================= */
+
+@media (min-width: 901px) {
+
+    .tarjetas {
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+
+}
