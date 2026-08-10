@@ -9,10 +9,10 @@ async function cargarCatalogo() {
     try {
 
         const respuestaXML =
-            await fetch("xml/datos.xml");
+            await fetch("XML/datos.xml");
 
         const respuestaXSL =
-            await fetch("xml/catalogo.xsl");
+            await fetch("XML/catalogo.xsl");
 
 
         if (!respuestaXML.ok || !respuestaXSL.ok) {
