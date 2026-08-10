@@ -67,6 +67,16 @@ async function cargarCatalogo() {
 
         contenedor.appendChild(resultado);
 
+        const imagenes = contenedor.querySelectorAll("img");
+
+imagenes.forEach((img) => {
+    const ruta = img.getAttribute("src");
+
+    if (ruta && ruta.startsWith("images/")) {
+        img.src = new URL(ruta, window.location.href).href;
+    }
+});
+
     }
 
     catch (error) {
