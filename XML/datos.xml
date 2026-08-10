@@ -14,7 +14,7 @@
             Gobernó la República Dominicana bajo un régimen autoritario
             durante más de tres décadas. Fue ajusticiado el 30 de mayo de 1961.
         </descripcion>
-        <imagen>/images/trujilloyadesgastado.jpg</imagen>
+        <imagen>images/trujilloyadesgastado.jpg</imagen>
     </personaje>
 
     <personaje>
@@ -25,7 +25,7 @@
             Fue uno de los participantes en la conspiración que culminó
             con la muerte de Rafael Leónidas Trujillo el 30 de mayo de 1961.
         </descripcion>
-        <imagen>/images/imbert.jpg</imagen>
+        <imagen>images/imbert.jpg</imagen>
     </personaje>
 
     <personaje>
@@ -37,7 +37,7 @@
             el 27 de febrero de 1963. Fue derrocado mediante un
             golpe de Estado el 25 de septiembre de ese mismo año.
         </descripcion>
-        <imagen>/images/juanboschjuramentacion.jpg</imagen>
+        <imagen>images/juanboschjuramentacion.jpg</imagen>
     </personaje>
 
     <personaje>
@@ -48,7 +48,7 @@
             Fue una de las principales figuras de la Guerra de Abril
             de 1965 y encabezó el gobierno constitucionalista.
         </descripcion>
-        <imagen>/images/caamaño1.jpg</imagen>
+        <imagen>images/caamaño1.jpg</imagen>
     </personaje>
 
     <personaje>
@@ -59,7 +59,7 @@
             Gobernó de manera consecutiva durante doce años,
             desde 1966 hasta 1978, en tres períodos presidenciales.
         </descripcion>
-        <imagen>/images/balaguercontrujillo.jpg</imagen>
+        <imagen>images/balaguercontrujillo.jpg</imagen>
     </personaje>
 
     <personaje>
@@ -70,7 +70,7 @@
             Ganó las elecciones presidenciales de 1978 y puso fin
             a los doce años consecutivos de gobierno de Joaquín Balaguer.
         </descripcion>
-        <imagen>/images/AntonioGuzmandiscurso.jpg</imagen>
+        <imagen>images/AntonioGuzmandiscurso.jpg</imagen>
     </personaje>
 
 </personajes>
